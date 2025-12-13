@@ -1,0 +1,248 @@
+.translate-page {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.translate-container {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.translate-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-icon {
+  width: 48px;
+  height: 48px;
+  color: #667eea;
+}
+
+.translate-header h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.translate-header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.translate-box {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.translate-input-group {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.input-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.input-section label {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.language-select {
+  padding: 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  background: white;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.language-select:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.translate-textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+  background: #f8f9fa;
+}
+
+.translate-textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  background: white;
+}
+
+.translate-textarea:read-only {
+  background: #f0f1f3;
+  cursor: not-allowed;
+}
+
+.btn-copy {
+  position: absolute;
+  top: 42px;
+  right: 8px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.4rem;
+  cursor: pointer;
+  color: #667eea;
+  transition: all 0.3s ease;
+}
+
+.btn-copy:hover {
+  background: #f5f7fa;
+  border-color: #667eea;
+}
+
+.swap-button-container {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 1rem;
+}
+
+.btn-swap {
+  padding: 0.75rem 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-swap:hover {
+  transform: rotate(180deg);
+}
+
+.error-message {
+  padding: 1rem;
+  background: #fee;
+  color: #c33;
+  border-radius: 6px;
+  border-left: 4px solid #c33;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn-translate {
+  flex: 1;
+  max-width: 300px;
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-translate:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.btn-translate:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-reset {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  background: white;
+  color: #667eea;
+  border: 1px solid #667eea;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-reset:hover {
+  background: #f5f7fa;
+}
+
+.translate-features {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.translate-features h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.translate-features ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.translate-features li {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .translate-input-group {
+    flex-direction: column;
+  }
+
+  .swap-button-container {
+    padding-bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .btn-swap {
+    width: 100%;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .btn-translate {
+    max-width: 100%;
+  }
+}
