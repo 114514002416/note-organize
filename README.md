@@ -319,7 +319,7 @@ A: 目前不支持云同步，但你可以通过导出和导入 JSON 文件在�
 
 - 📌 [提交 Issue](https://github.com/yourusername/note-organize/issues)
 - 💬 [讨论区](https://github.com/yourusername/note-organize/discussions)
-- 📧 联系邮箱：your.email@example.com
+- 📧 联系邮箱：shenyiman9@gmail.com
 
 ---
 
